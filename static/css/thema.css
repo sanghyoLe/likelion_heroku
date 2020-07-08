@@ -9,15 +9,12 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-.block {
-    width: 100%;
-}
+
 
 body .Gaeyo {
     padding-left: 0px;
     padding-right: 0px;
-    overflow-x: hidden;
-    overflow-y: auto;
+
 
 }
 
