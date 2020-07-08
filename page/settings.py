@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'xjhk-@oc=oe$8eyp132o+g)krtrs(c
 #DEBUG = True
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['django-env2.eba-gi8fctbr.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
