@@ -1,0 +1,53 @@
+{% extends 'Gaeyo_base.html' %}
+{%block content%}
+
+<h1 class="card-title"> 밝은 테마 / 어두운 테마 배경 </h1>
+<p class="card-text">
+네비게이션 바는 크게 -navbar-light 타입, navbar-dark 타입으로 나누어 진다 . <br>
+이 두가지 타입들은 개별 브랜드와 링크, <br>
+그리고 아이콘 등의 색상테마에도 영향을 준다. <br>
+그러니 상황에 맞게 적절하게 사용 하자 !<br>
+Navbar-dark  어두운 색상의 배경에 어울림 !<br>
+Navbar-light  밝은 색상의 배경에 어울림 ! <br>
+네비게이션 바에 색상을 부여 할 때에는 bg-brimary 컬러 팔레트 등을 확인해보자 ! 그렇지 않은 경우, 네비게이션 바는 기본적으로 투명한 색상을 가지게 된다.<br>
+</p>
+
+<b> light 태그 적용했을 때</b><br><br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nb">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div id="nb" class="navbar-collapse collapse">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Left aligned</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Right alinged </a>
+                </li>
+                </ul>
+                </div>
+                </nav>
+               <br><br> <b> dark 태그 적용했을 때</b><br><br>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nb">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div id="nb" class="navbar-collapse collapse">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Left aligned</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Right alinged </a>
+                </li>
+                </ul>
+                </div>
+                </nav>
+{%endblock%}

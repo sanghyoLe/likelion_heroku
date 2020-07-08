@@ -1,0 +1,27 @@
+{% extends 'Gaeyo_Base.html' %}
+{%block content%}
+<h1 class="card-title">Bootstrap Customizing </h1><br>
+
+<p class="card-text">
+<b>부트스트랩을 커스터마이징 하는 방법</b><br>
+부트스트랩을 원형 그대로 사용하게 되는 경우는 많지 않다 ! <br>
+그렇기에 스타일이나, 외형을 변경해야 하는 경우가 종종 발생하는데, 색상 팔레트, 폰트, 둥글림 처리 등등의 내용들은 자주 변경될 수 있는 것들이다. <br>
+외에도, 반응형 레이아웃을 위한 브레이크 포인트, 그리드의 gutter(컬럼 사이 간격), 칼럼의 그리드 개수 같은 것들도 변형이 가능하다.<br>
+부트스트랩을 커스터마이징 하는 방법에는 크게 두가지 방법이 있다.<br>
+1.	CSS를 통해 덮어씌우기<br>
+원활한 유지보수를 위해, CSS 커스터마이징은 별도의 custom.css 파일을 통해 진행하는 편이 낫다. <br>
+그렇기에 bootstrap.css 원형 파일은 그대로 유지하는 것이 안전하다. 예를 들어 css를 덮어씌우는 방식은 다음과 같다.<br>
+<img src="/static/images/customizing_ex.png"><br>
+
+이렇게 기본적인 방식으로, 스타일링 제거하거나, 변형할 수 있다.<br>
+Css 추가 설정은 항상 추가적인 css 클래스 설정에 의해 덮어씌워지게 된다. <br>
+그렇기에 부트스트랩의 개별 클래스를 덮어쓰는 코드를 추가하지 않은 이상, 별도로 !important 같은 옵션을 따로 줄 필요가 없다. <br>
+2.	SASS를 통해 커스터마이징 하기.<br>
+SASS를 통해 커스터마이징 하는 것은 별도의 설명을 첨부하지 않겠다! 궁금하면 찾아보자! <br>
+<a href="https://getbootstrap.com/docs/4.0/getting-started/theming/#sass"> https://getbootstrap.com/docs/4.0/getting-started/theming/#sass
+
+
+</p>
+
+
+{%endblock%}

@@ -1,0 +1,40 @@
+{% extends 'Gaeyo_base.html' %}
+{%block content%}
+<h4 class="card-title"><b>브레이크 포인트 ( 반응형 처리 부분 ) </b></h1><br>
+<pre-line class="card-text">
+
+기본적으로 네비게이션 바는 모바일 규격의 작은 화면에 맞게 설계되어있다.<br> 
+그렇기 때문에 expand 클래스를 통해 덮어씌우지않는 한  개별 요소들이 상하로 쌓이는 구조가 된다. <br><br>
+반응형 처리를 위해서 적용된 이 구문들은 총 다섯개의 포인트를 갖고있다.<br><br><br><br>
+<b>navbar-expand</b>  = 항상 펼쳐져있도록 강제하는 옵션<br>
+<b>navbar-expand-sm</b> = 스몰 해상도 + 576px보다 큰 경우에 펼쳐짐<br>
+<b>navbar-expand-md</b> = 미디엄 해상도 + 768px보다 큰 경우에 펼쳐짐<br>
+<b>navbar-expand-lg</b> = 라지 해상도 + 992px보다 큰 경우에 펼쳐짐<br>
+<b>navbar-expand-xl</b> = 엑스라지 해상도 + 1200px보다 큰 경우에 펼쳐짐<br>
+
+여기서 펼쳐진다 라는 의미는 메뉴를 드롭다운으로 모아놓는 것을 말한다!
+<br><br><br><br>
+</pre-line>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#nb">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div id="nb" class="navbar-collapse collapse">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Left aligned</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Right alinged </a>
+                </li>
+                </ul>
+                </div>
+                </nav>
+<br><br><br><br>
+화면을 줄이면 위의 navbar가 드롭다운 메뉴로 바뀐다 ! 다시 화면이 커지면 navbar가 펴진다. 펴진다는 것은 이런 의미이다 
+
+{%endblock%}
