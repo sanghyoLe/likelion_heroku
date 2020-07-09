@@ -1,0 +1,25 @@
+{% extends 'python_base.html' %}
+{%block content%}
+<div class="card-text text-left" >
+<h1 class="card-title">for문,range함수</h1>
+
+파이썬의 for 문은 임의의 시퀀스 (리스트나 문자열)의 항목들을 <br>
+그 시퀀스에 들어있는 순서대로 이터레이션 합니다.<br>
+<img src="/static/images/python_17.png"><br><br>
+숫자들의 시퀀스로 이터레이트할 필요가 있으면, 내장 함수 range()가 편리합니다. <br>
+수열을 만듭니다. 끝값은 만들어지는 수열에 포함되지 않습니다; range(10) 은 10개의 값을 만드는데,<br>
+ 길이 10인 시퀀스의 항목들을 가리키는 올바른 인덱스들입니다. 범위가 다른 숫자로 시작하거나,<br>
+  다른 증가분을 (음수조차 가능합니다; 때로 이것을 〈스텝(step)〉이라고 부릅니다) 지정하는 것도 가능합니다<br>
+<img src="/static/images/python_18.png"><br><br>
+시퀀스의 인덱스들로 이터레이트 하려면,<br>
+ 다음처럼 range()와 len() 을 결합할 수 있습니다:<br>
+<img src="/static/images/python_19.png"><br><br>
+시퀀스를 루핑할 때, enumerate() 함수를 사용하면 <br>
+위치 인덱스와 대응하는 값을 동시에 더 쉽게 얻을 수 있습니다.<br>
+<img src="/static/images/python_20.png"><br><br>
+시퀀스를 거꾸로 루핑하려면, 먼저 정방향으로 <br>
+시퀀스를 지정한 다음에 reversed() 함수를 호출하세요.<br>
+<img src="/static/images/python_21.png"><br><br>
+
+</div>
+{%endblock%}

@@ -1,0 +1,25 @@
+{% extends 'django_base.html' %}
+{%block content%}
+
+            <div class="container">
+                        <h1 class="card-title">cheat sheet</h1>
+                            <pre-line class="card-text">
+<b># 장고를 공부하면서 사용하게될 터미널 명령어들<br><br></b>
+<b>## 새 프로젝트 생성<br></b>
+django-admin startproject projectname<br><br>
+<b>## 프로젝트에 App 추가<br></b>
+python manage.py startapp appname<br><br>
+<b>## 서버 켜기<br></b>
+python manage.py runserver<br><br>
+<b>## migrations 만들기<br></b>
+python manage.py makemigrations<br><br>
+<b>## DB migrate 하기<br></b>
+python manage.py migrate<br><br>
+<b>## 관리자(admin) 계정 만들기<br></b>
+python manage.py createsuperuser<br><br>
+<b>## Static 파일 collecting 하기<br></b>
+python manage.py collectstatic<br><br>
+하나도 몰라도 괜찮습니다. 외우지 않아도 괜찮습니다. 모를때 보고 컨닝하라고 만든게 이 cheat sheet 니까. 언제든지 참고해서 공부하도록 합시다. 쓰다보면 언젠가 외워지겠지..<br>
+</pre-line>
+</div>
+{%endblock%}

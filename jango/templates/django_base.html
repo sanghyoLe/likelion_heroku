@@ -35,19 +35,14 @@
                             </div>
                                    <div class="dropdown" >
   <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    BOOTSTRAP
+    DJANGO
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="{%url 'bootstrap'%}">개요</a>
-    <a class="dropdown-item" href="{%url 'ui'%}">UI 컴포넌트</a>
-    <a class="dropdown-item" href="{%url 'use_ui'%}">UI 컴포넌트 사용법</a>
-     <a class="dropdown-item" href="{%url 'make_navbar'%}">NavBar 실습</a>
-      <a class="dropdown-item" href="{%url 'breakpoint'%}">브레이크 포인트</a>
-       <a class="dropdown-item" href="{%url 'dark_light'%}">밝은 / 어두운 테마</a>
-        <a class="dropdown-item" href="{%url 'grid'%}">Bootstrap Grid</a>
-         <a class="dropdown-item" href="{%url 'row_col'%}">행과 열</a>
-          <a class="dropdown-item" href="{%url 'flex_desine'%}">반응형 디자인</a>
-           <a class="dropdown-item" href="{%url 'bootstrap_custom'%}">Bootstrap Customizing</a>
+    <a class="dropdown-item" href="{%url 'django_home'%}">개요</a>
+    <a class="dropdown-item" href="{%url 'django_cheat'%}">cheat sheet</a>
+    <a class="dropdown-item" href="{%url 'django_setting'%}">기본 환경 세팅</a>
+     <a class="dropdown-item" href="{%url 'django_helloworld'%}">Django hello world !</a>
+
          
   </div>
 </div>
@@ -76,7 +71,7 @@
         <div class="row">
           <div class="col-sm-8 col-xl-6 mx-auto ">
                 <div class="card" >
-                    <div class="card-body text-left">
+                    <div class="card-body  text-justify">
                       
                         {% block content %}
                         {%endblock%}

@@ -1,6 +1,6 @@
 {% extends 'git_base.html' %}
 {%block content%}
-<div class="container text-center">
+<div class="container">
     <h1 class="card-title">새로운 저장소 만들기<br></h1>
     <pre-line class="card-text">
         폴더를 하나 만들고, 그 안에서 아래 명령을 실행하세요.<br>
@@ -11,6 +11,7 @@
         <b>git clone /로컬/저장소/경로</b><br>
         원격 서버의 저장소를 복제하려면 아래 명령을 실행하세요.<br>
         <b>git clone 사용자명@호스트:/원격/저장소/경로</b><br><br>
+        <a href="#git_clone" target="_blank">원격 서버의 주소 알아 내는 법</a><br><br>
     <h1 class="card-title">작업의 흐름</h1><br>
         여러분의 로컬 저장소는 git이 관리하는 세 그루의 나무로 구성돼있어요.<br>
         첫번째 나무인 <b>작업 디렉토리(Working directory)</b>는
@@ -40,7 +41,7 @@
         <b>git remote add origin <원격 서버 주소></b><br>
         이제 변경 내용을 원격 서버로 발행할 수 있어요.<br>
         원격 서버 주소는 어떻게 아는데?<br>
-        <img src="/static/images/git_clone.PNG"><br>
+        <img src="/static/images/git_clone.PNG" id="git_clone"><br>
         빨간 동그라미 부분을 클릭! 하면 원격 서버 주소 복사 !<br>
         이렇게 하면 우리는 이제, git을 사용할 수 있다 ! <br>
         부족한 부분은 심화편에서 공부하자!
