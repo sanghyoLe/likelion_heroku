@@ -1,0 +1,89 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LikeLion</title>
+
+  
+        {%load static%}
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="/static/css/thema.css">
+  
+          
+ 
+    </link>
+
+</head>
+
+<body class="Gaeyo">
+
+    <div class="flex-grow-1 d-flex flex-column">
+        <div class="toggles">
+            <div class="container-fluid fixed-top bg-primary check-contrast">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-11 container-alt mx-auto">
+                        <nav class="navbar navbar-expand-xl navbar-dark toggles-ignore text-light px-0 py-1"
+                            id="topnav">
+                            <a class="navbar-brand mr-2 mb-1" href="{%url 'home'%}"
+                                title="Bootstrap theme builder"><span><b>Like</b>lion</span></a>
+                            <div class="navbar-nav d-none d-xl-block">
+                                <a class="nav-link pl-0 mr-1" href="{%url 'home'%}" rel="nofollow">
+                                    for kku
+                                </a>
+                            </div>
+                                   <div class="dropdown" >
+  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    GIT
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="{%url 'git_home'%}">GIT 기초</a>
+    <a class="dropdown-item" href="{%url 'git_deep'%}">GIT 심화</a>
+  </div>
+</div>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target=".navbar-dual">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse navbar-dual">
+                                <div class="navbar-nav small text-uppercase ml-auto">
+                                    <a class="nav-link" href="{%url 'home'%}">
+                                        Lecture
+                                    </a>
+                                    <a class="nav-link font-weight-bold" href="#" data-toggle="modal">
+                                        About
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="container-fluid block">
+        <div class="row">
+          <div class="col-sm-8 col-xl-6 mx-auto ">
+                <div class="card" >
+                    <div class="card-body text-left">
+                      
+                        {% block content %}
+                        {%endblock%}
+                   
+                </div>
+            </div>   
+                      
+            </div>
+            </div>
+            </div>
+    
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

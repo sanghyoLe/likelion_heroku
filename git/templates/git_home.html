@@ -1,0 +1,51 @@
+{% extends 'git_base.html' %}
+{%block content%}
+<div class="container text-center">
+    <h1 class="card-title">새로운 저장소 만들기<br></h1>
+    <pre-line class="card-text">
+        폴더를 하나 만들고, 그 안에서 아래 명령을 실행하세요.<br>
+        <b>git init</b><br>
+        새로운 git 저장소가 만들어집니다.<br><br>
+        <h1 class="card-title">저장소 받아오기</h1>
+        로컬 저장소를 복제(clone)하려면 아래 명령을 실행하세요.<br>
+        <b>git clone /로컬/저장소/경로</b><br>
+        원격 서버의 저장소를 복제하려면 아래 명령을 실행하세요.<br>
+        <b>git clone 사용자명@호스트:/원격/저장소/경로</b><br><br>
+    <h1 class="card-title">작업의 흐름</h1><br>
+        여러분의 로컬 저장소는 git이 관리하는 세 그루의 나무로 구성돼있어요.<br>
+        첫번째 나무인 <b>작업 디렉토리(Working directory)</b>는
+        실제 파일들로 이루어져있고, <br>
+        <b>두번째 나무인 인덱스(Index)</b>는
+        <b>준비 영역(staging area)</b>의 역할을 하며, 마지막 나무인 <b>HEAD</b>는
+        <b>최종 확정본(commit)</b>을 나타내요.<br><br>
+        <img src="/static/images/git_flow.PNG"><br><br>
+        <h1 class="card-title">추가와 확정(commit)</h1>
+        변경된 파일은 아래 명령어로 (인덱스에) 추가할 수 있어요.<br>
+        <b>git add <파일 이름><br>
+        git add *</b><br>
+        이것이 바로 git의 기본 작업 흐름에서 첫 단계에 해당돼요.<br>
+        하지만 실제로 변경 내용을 확정하려면 아래 명령을 내려야 한답니다.<br>
+        <b>git commit -m "이번 확정본에 대한 설명"</b><br>
+        자, 이제 변경된 파일이 HEAD에 반영됐어요.<br>
+        하지만, 원격 저장소에는 아직 반영이 안 됐답니다<br><br>
+
+    <h1 class="card-title">변경 내용 발행(push)하기</h1>
+        현재의 변경 내용은 아직 로컬 저장소(내 컴퓨터)의 HEAD 안에 머물고 있어요.<br>
+        이제 이 변경 내용을 원격 서버(github)로 올려봅시다. 아래 명령을 실행하세요.<br>
+        <b>git push origin master</b><br>
+        (다른 가지를 발행하려면 master를 원하는 가지 이름으로 바꿔주세요.)<br>
+
+        만약 기존에 있던 원격 저장소를 복제한 것이 아니라면,<br>
+        원격 서버의 주소를 git에게 알려줘야 해요.<br>
+        <b>git remote add origin <원격 서버 주소></b><br>
+        이제 변경 내용을 원격 서버로 발행할 수 있어요.<br>
+        원격 서버 주소는 어떻게 아는데?<br>
+        <img src="/static/images/git_clone.PNG"><br>
+        빨간 동그라미 부분을 클릭! 하면 원격 서버 주소 복사 !<br>
+        이렇게 하면 우리는 이제, git을 사용할 수 있다 ! <br>
+        부족한 부분은 심화편에서 공부하자!
+</pre-line>
+
+
+</div>
+{%endblock%}

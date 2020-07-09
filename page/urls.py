@@ -16,10 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 import bootstrap.views
+import jango.views
+import git.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',bootstrap.views.home,name="home"),
     path('notyet/',bootstrap.views.notyet,name="notyet"),
     path('boostrap/',include('bootstrap.urls')),
+    path('django/',include('jango.urls')),
+    path('git/',include('git.urls')),
 
 ]
