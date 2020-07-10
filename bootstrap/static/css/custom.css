@@ -1,0 +1,24 @@
+.bg-custom {
+  background-color: rgb(255, 166, 0) !important;
+}
+
+.bg-custom:hover,
+a.bg-custom:focus,
+button.bg-custom:hover,
+button.bg-custom:focus {
+  background-color: #fcb900 !important;
+}
+
+.btn-custom {
+  background-color: rgb(255, 166, 0) !important;
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #fcb900;
+  border-color: #fcb900;
+}
+
+.btn-custom:focus,
+.btn-custom.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 80, 5, 0.671);
+}

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LikeLion</title>
 
-  
-        {%load static%}
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />    
+
+    {%load static%}
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/static/css/thema.css">
-  
-          
- 
+    <link rel="stylesheet" href="/static/css/custom.css">
+
+
+
     </link>
 
 </head>
@@ -21,7 +22,7 @@
 
     <div class="flex-grow-1 d-flex flex-column">
         <div class="toggles">
-            <div class="container-fluid fixed-top bg-primary check-contrast">
+            <div class="container-fluid fixed-top bg-custom check-contrast">
                 <div class="row">
                     <div class="col-xl-9 col-lg-11 container-alt mx-auto">
                         <nav class="navbar navbar-expand-xl navbar-dark toggles-ignore text-light px-0 py-1"
@@ -33,23 +34,25 @@
                                     for kku
                                 </a>
                             </div>
-                                   <div class="dropdown" >
-  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    PYTHON
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="{%url 'python_home'%}">개요</a>
-    <a class="dropdown-item" href="{%url 'python_number'%}">숫자 계산하기</a>
-    <a class="dropdown-item" href="{%url 'python_string'%}">문자열</a>
-    <a class="dropdown-item" href="{%url 'python_list'%}">리스트</a>
-    <a class="dropdown-item" href="{%url 'python_if'%}">if문</a>
-    <a class="dropdown-item" href="{%url 'python_for'%}">for문,range함수</a>
-    <a class="dropdown-item" href="{%url 'python_break'%}">루프의 break 와 continue 문, 그리고 else 절</a>
-    <a class="dropdown-item" href="{%url 'python_def'%}">함수 정의, 튜플, 시퀀스</a>
-    <a class="dropdown-item" href="{%url 'python_dictionary'%}">딕셔너리</a>
-    <a class="dropdown-item" href="{%url 'python_exception'%}">예외처리</a>
-  </div>
-</div>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PYTHON
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="{%url 'python_home'%}">개요</a>
+                                    <a class="dropdown-item" href="{%url 'python_number'%}">숫자 계산하기</a>
+                                    <a class="dropdown-item" href="{%url 'python_string'%}">문자열</a>
+                                    <a class="dropdown-item" href="{%url 'python_list'%}">리스트</a>
+                                    <a class="dropdown-item" href="{%url 'python_if'%}">if문</a>
+                                    <a class="dropdown-item" href="{%url 'python_for'%}">for문,range함수</a>
+                                    <a class="dropdown-item" href="{%url 'python_break'%}">루프의 break 와 continue 문, 그리고
+                                        else 절</a>
+                                    <a class="dropdown-item" href="{%url 'python_def'%}">함수 정의, 튜플, 시퀀스</a>
+                                    <a class="dropdown-item" href="{%url 'python_dictionary'%}">딕셔너리</a>
+                                    <a class="dropdown-item" href="{%url 'python_exception'%}">예외처리</a>
+                                </div>
+                            </div>
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target=".navbar-dual">
                                 <span class="navbar-toggler-icon"></span>
@@ -68,29 +71,35 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="container-fluid block">
-        <div class="row">
-          <div class="col-sm-8 col-xl-6 mx-auto ">
-                <div class="card" >
-                    <div class="card-body text-left">
-                      
-                        {% block content %}
-                        {%endblock%}
-                   
-                </div>
-            </div>   
-                      
-            </div>
-            </div>
-            </div>
-    
+            <div class="row">
+                <div class="col-sm-8 col-xl-6 mx-auto ">
+                    <div class="card">
+                        <div class="card-body text-left">
 
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                            {% block content %}
+                            {%endblock%}
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
 
 </body>
 
