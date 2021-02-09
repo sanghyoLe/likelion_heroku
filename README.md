@@ -5,22 +5,26 @@
 
 ** 사용법 ** 
 
-1. 본인의 컴퓨터에 pull 해서 파일을 내려 받습니다.
+1. 본인의 컴퓨터에 파일을 설치할 폴더를 만든 후 Git 저장소를 생성합니다.
+
+``` git init ```
+
+2. 본인의 컴퓨터에 pull 해서 파일을 내려 받습니다.
 
 ``` git pull https://github.com/sanghyoLe/likelion-kku.git ```
 
-2. 설치된 폴더에서 git bash를 실행 시킨 뒤, 가상 환경을 설치해 줍니다.
+3. 설치된 폴더에, 가상 환경을 설치해 줍니다.
 
 ``` python -m venv 가상환경명 ```
 
-3. 가상환경을 실행시킵니다.
+4. 가상환경을 실행시킵니다.
 
 ``` source myvenv/scripts/activate ```
 
-4. 필요한 패키지를 설치합니다.
+5. 필요한 패키지를 설치합니다.
 
 ``` pip install -r requirement.txt ```
 
-5. 서버를 실행시킵니다.
+6. 서버를 실행시킵니다.
 
 ``` python manage.py runserver ```
