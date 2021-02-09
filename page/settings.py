@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 import dj_database_url 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -133,3 +134,5 @@ STATICFILES_DIR = [os.path.join(BASE_DIR,'static')]
 
 db_from_env = dj_database_url.config(conn_max_age=500) 
 DATABASES['default'].update(db_from_env)
+# Activate Django-Heroku.
+django_heroku.settings(locals())
