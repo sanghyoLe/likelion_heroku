@@ -1,5 +1,5 @@
-# 멋쟁이 사자처럼 8기를 진행하며 만든 강의 페이지 입니다. html,css,javascript,django,bootstrap을 이용해 제작했습니다.
-# 페이지에는 bootstrap, git, django, python 의 기초적인 내용이 담겨있습니다.
+## 멋쟁이 사자처럼 8기를 진행하며 만든 강의 페이지 입니다. html,css,javascript,django,bootstrap을 이용해 제작했습니다.
+## 페이지에는 bootstrap, git, django, python 의 기초적인 내용이 담겨있습니다.
 
 
 
